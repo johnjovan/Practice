@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style media="screen">
+      #slide{
+        text-align: center;
+        background-color: grey;
+        border: 1px solid violet;
+      }
+      #slide:hover{
+        color: grey;
+        background-color: indigo;
+      }
+      #p1{
+        padding: 50px;
+        display: none;
+        border: 1px solid violet;
+        background-color: grey;
+        text-align: center;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#slide").click(function () {
+          var div = $('#p1');
+          div.slideToggle();
+          div.animate({
+            height: '300px',
+            opacity: 0.4,}, "slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="slide"><h3>Slide Me!!</h3></div>
+      <div id="p1">
+        <h4>Sliding Items
+        Hello this is a example of Sliding
+        Thank you so much!!!</h4>
+      </div>
+    </div>
+
+
+  </body>
+</html>

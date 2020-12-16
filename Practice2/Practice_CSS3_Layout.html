@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Layout</title>
+    <style media="screen">
+    body {
+      width: 1000px;
+      margin: 0 auto;
+    }
+      #header:hover {
+        color: pink;
+        background-color: black;
+      }
+      #header:active {
+        color: black;
+        background-color: pink;
+      }
+      #header {
+        background-color: pink;
+        text-align: center;
+        text-shadow: 5px 5px 10px hotpink;
+        height: 100px;
+        overflow: hidden;
+        color: indigo;
+      }
+      #wrap { overflow: hidden;}
+      #child1:hover {
+        background-color: indigo;
+        color: maroon;
+      }
+      #child1:active {
+        background-color: maroon;
+        color: indigo;
+      }
+      #child1 {
+        width: 298px;
+        float: left;
+        background-color: maroon;
+        color: indigo;
+      }
+      #child2:hover {
+        background-color: indigo;
+        color: tomato;
+      }
+      #child2:active {
+        background-color: tomato;
+        color: indigo;
+      }
+      #child2 {
+        width: 298px;
+        float: left;
+        background-color: tomato;
+        color: indigo;
+      }
+      #child3:hover {
+        background-color: indigo;
+        color: grey;
+      }
+      #child3:active {
+        background-color: grey;
+        color: indigo;
+      }
+      #child3 {
+        width: 404px;
+        float: left;
+        background-color: grey;
+        color: indigo;
+        height: 182px;
+      }
+      .footer {
+        background-color: darkgrey;
+        float: left;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Page Header</h1>
+    </div>
+    <div id="wrap">
+      <div id="child1">
+        <h1>Menu</h1>
+        <p>Name</p>
+        <p>Age</p>
+        <p>Address</p>
+      </div>
+      <div id="child2">
+        <h1>Content</h1>
+        <p>John Jovan</p>
+        <p>24 Years Old</p>
+        <p>Impala Street Village East</p>
+      </div>
+      <div id="child3">
+        <h1>About</h1>
+        <p>I'm John Jovan, I live in Village and I don't have a car. I'm not rich but I'm trustworthy. Thanks for the time you read this. <br>
+           I'm John Jovan, I live in Village and I don't have a car. I'm not rich but I'm trustworthy. Thanks for the time you read this. <br>
+           I'm John Jovan.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer">
+      <div class="ft1">English</div>
+      <div class="ft2" class="ft1">Tagalog</div>
+      <div class="ft3">Spanish</div>
+      <div class="ft4">Bisaya</div>
+      <div class="ft5">Korean</div>
+      <div class="ft6">Japanese</div>
+      <div class="ft7">German</div>
+      <div class="ft8">Chinese</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practice 2</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#div1").click(function () {
+          $("#div2").slideDown();
+        });
+      });
+    </script>
+    <style media="screen">
+      button{
+        padding: 5px;
+        border-radius: 30px;
+      }
+      #div1{
+        border: 2px solid yellow;
+        background-color: indigo;
+        text-align: center;
+      }
+      #div2{
+        border: 2px solid yellow;
+        background-color: grey;
+        text-align: center;
+        font-size: bold;
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Button 1</button> <br>
+    <button id="btn2">Button 2</button> <br>
+    <button id="btn3">Button 3</button>
+    
+    <div class="container">
+      <div id="div1">
+        <h4>Greetings</h4>
+      </div>
+      <div id="div2">
+        <p>Hello Phillipines and Hello World!!!</p>
+      </div>
+    </div>
+  </body>
+</html>

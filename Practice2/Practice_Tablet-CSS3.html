@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 - Tablet Layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Modak|Sacramento&display=swap" rel="stylesheet">
+    <style media="screen">
+      /* Default Setting */
+      * { margin: 0; padding: 0;}
+      body {
+        font-family: 'Helvetica', sans-serif;
+        min-width: 760px;
+      }
+      li { list-style: none; }
+      a { text-decoration: none; }
+      /* Header */
+      #main_header{
+        height: 60px;
+        line-height: 60px;
+        padding-left: 10px;
+        border-bottom: 1px solid black;
+        background-color: #2AC391;
+        color: black;
+        font-family: 'Modak', cursive;
+      }
+      #main_header > #header:hover{ color: #B100B1; }
+      /* Top Navigation */
+      #main_gnb{ overflow: hidden;
+        background-color: black;
+        border-bottom: 1px solid black;
+      }
+      #main_gnb:hover{
+        background-color: violet;
+      }
+      #main_gnb > ul.left{
+        float: left;
+        overflow: hidden;
+      }
+      #main_gnb > ul.right{
+        float: right;
+        overflow: hidden;
+      }
+      #main_gnb > ul.left > li{ float: left; }
+      #main_gnb > ul.right > li{ float: left; }
+      #main_gnb a {
+        display: block;
+        padding: 10px 20px;
+        border-left: 1px solid pink;
+        border-right: 1px solid hotpink;
+        color: black;
+        font-weight: bold;
+        border-radius: 15px 0 15px 15px;
+      }
+      #main_gnb > ul > li > a:nth-of-type(1) {
+        color: #8A008A;
+        background-color: black;
+      }
+      #main_gnb > ul > li > a:hover {
+        color: black;
+        background-color: #8A008A;
+      }
+      #main_gnb > ul > li > a:active {
+        color: yellow;
+        background-color: #24282F;
+      }
+      /* Main Contents */
+      #wrap{
+        overflow: hidden;
+      }
+      #wrap > #main_lnb{
+        float: left;
+        width: 200px;
+      }
+      #wrap > #content_wrap{
+        float: left;
+        width: 100%;
+        margin-right: -200px;
+      }
+      #wrap > #content_wrap > #content { padding-right: 200px;}
+      /* Left List Menu */
+      #wrap{
+        background-image: url(Image/Wall.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      #main_lnb > ul > li > a {
+        display: block;
+        height: 66.5px; line-height: 50px;
+        padding-left: 15px;
+
+        border-top: 1px solid tomato;
+        border-bottom: 1px solid lightblue;
+        color: darkgrey;
+        font-weight: bold;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: #24282F;
+      }
+      #main_lnb > ul > li > a:hover { background-color: pink; }
+      #main_lnb > ul > li > a:active {
+        background-color: yellow;
+        color: tomato;
+      }
+      #content{
+        background-image: url(Image/abacus.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        border-left: 1px solid black;
+        background-size: 100%;
+        color: #A0A0A0;
+      }
+      #content h1 {
+        color: #D8D800;
+        font-family: 'Arvo', serif;
+      }
+      #content h1:hover { color: #630063; }
+      #content h1::selection { background-color: #302E2C; color: #630063;}
+      #content p { font-family: 'Handlee', cursive; }
+      #content p::selection { background-color: #302E2C; color: #630063;}
+      #article{ padding: 10px; }
+      /* Footer */
+      #main_footer{
+        padding: 10px;
+        border-top: 3px solid black;
+        text-align: center;
+
+        background-color: black;
+        color: violet;
+      }
+      #main_footer:hover{
+        background-color: violet;
+        color: black;
+      }
+      #main_footer:active{
+        background-color: black;
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header id="main_header">
+      <span id="header">
+        <h1>Jovan Tablet</h1>
+      </span>
+    </header>
+      <nav id="main_gnb">
+        <ul class="left">
+          <li><a href="#">Button1</a></li>
+          <li><a href="#">Button2</a></li>
+          <li><a href="#">Button3</a></li>
+          <li><a href="#">Button4</a></li>
+          <li><a href="#">Button5</a></li>
+          <li><a href="#">Button6</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="#">Button7</a></li>
+          <li><a href="#">Button8</a></li>
+        </ul>
+      </nav>
+      <div id="wrap">
+        <nav id="main_lnb">
+          <ul>
+            <li><a href="#">LeftBtn1</a></li>
+            <li><a href="#">LeftBtn1</a></li>
+            <li><a href="#">LeftBtn1</a></li>
+            <li><a href="#">LeftBtn1</a></li>
+            <li><a href="#">LeftBtn1</a></li>
+          </ul>
+        </nav>
+        <div id="content_wrap">
+          <div id="content">
+            <article id="title">
+              <h1>Text Tablet</h1>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+            </article>
+            <article>
+              <h1>Text Tablet</h1>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+            </article>
+            <article>
+              <h1>Text Tablet</h1>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+              <p>Hello Good Morning!!! Hello Good Morning!!! Hello Good Morning!!!</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+      <footer id="main_footer">
+        <h3>Jovan Tablet Footer</h3>
+        <address>Cainta, Rizal, Philippines</address>
+      </footer>
+
+  </body>
+</html>
